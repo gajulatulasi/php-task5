@@ -1,0 +1,199 @@
+/* Custom Styles for Blog Application */
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navigation */
+.navbar-custom {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+/* Footer */
+.footer-custom {
+    background: rgba(0, 0, 0, 0.1);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Cards */
+.card-custom {
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Buttons */
+.btn-gradient {
+    background: linear-gradient(45deg, #42e695, #3bb2b8);
+    border: none;
+    color: white;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(45deg, #3bb2b8, #42e695);
+    transform: scale(1.05);
+    color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.btn-danger-custom {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    border: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-danger-custom:hover {
+    background: linear-gradient(45deg, #ee5a24, #ff6b6b);
+    transform: scale(1.05);
+    color: white;
+}
+
+/* Author Badge */
+.author-badge {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    color: white;
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+/* Post Content */
+.post-content {
+    line-height: 1.6;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.post-title {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Forms */
+.form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+/* Alerts */
+.alert {
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.alert-success {
+    background: linear-gradient(45deg, #d4edda, #c3e6cb);
+    color: #155724;
+}
+
+.alert-danger {
+    background: linear-gradient(45deg, #f8d7da, #f5c6cb);
+    color: #721c24;
+}
+
+.alert-warning {
+    background: linear-gradient(45deg, #fff3cd, #ffeaa7);
+    color: #856404;
+}
+
+/* Pagination */
+.pagination .page-link {
+    border-radius: 8px;
+    margin: 0 3px;
+    border: none;
+    color: #667eea;
+}
+
+.pagination .page-item.active .page-link {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    border-color: #667eea;
+}
+
+.pagination .page-link:hover {
+    background-color: #e9ecef;
+    color: #764ba2;
+}
+
+/* Login/Register Forms */
+.auth-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    padding: 40px;
+}
+
+/* Loading Spinner */
+.spinner-border-sm {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .card-custom {
+        margin-bottom: 20px;
+    }
+    
+    .auth-container {
+        padding: 30px 20px;
+        margin: 20px;
+    }
+    
+    .btn-group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .btn-group .btn {
+        margin: 2px 0;
+    }
+}
+
+/* Animation for alerts */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.alert {
+    animation: slideIn 0.3s ease;
+}
